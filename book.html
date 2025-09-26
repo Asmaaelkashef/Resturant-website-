@@ -81,6 +81,101 @@
     .card button {
       margin-top: 20px;
     }
+
+    /* Mobile responsiveness */
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+      }
+      
+      .right {
+        flex: none;
+        height: 40vh;
+        min-height: 250px;
+      }
+      
+      .left {
+        flex: none;
+        padding: 15px;
+        min-height: 60vh;
+      }
+      
+      .form, .card {
+        max-width: 100%;
+        padding: 20px;
+        margin: 0;
+      }
+      
+      .form h2, .card h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+      }
+      
+      input, select {
+        padding: 12px;
+        font-size: 14px;
+        margin: 10px auto;
+      }
+      
+      button {
+        height: 45px;
+        width: 140px;
+        font-size: 14px;
+        margin: 15px auto 0;
+      }
+      
+      .error {
+        font-size: 12px;
+        margin-top: -6px;
+        margin-bottom: 6px;
+      }
+      
+      .card p {
+        font-size: 14px;
+        margin: 8px 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .left {
+        padding: 10px;
+      }
+      
+      .form, .card {
+        padding: 15px;
+      }
+      
+      .form h2, .card h2 {
+        font-size: 20px;
+        margin-bottom: 12px;
+      }
+      
+      input, select {
+        padding: 10px;
+        font-size: 13px;
+        margin: 8px auto;
+      }
+      
+      button {
+        height: 40px;
+        width: 120px;
+        font-size: 13px;
+        margin: 12px auto 0;
+      }
+      
+      .error {
+        font-size: 11px;
+        margin-top: -4px;
+        margin-bottom: 4px;
+      }
+      
+      .card p {
+        font-size: 13px;
+        margin: 6px 0;
+      }
+    }
   </style>
 </head>
 <body>
